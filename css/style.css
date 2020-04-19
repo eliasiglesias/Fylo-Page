@@ -31,19 +31,18 @@ body {
 /* header */
 
 header {
-	margin-top: 70px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-image: url(../images/bg-curvy-desktop.svg);
-	background-position: center bottom;
+	background-position: bottom;
 	background-repeat: no-repeat;
-	width: 100%;
+	background-size: contain;
+	padding-bottom: 200px;
 }
 
 .heading-one {
-	margin-top: 30px;
 	font-family: "Raleway", sans-serif;
 	font-size: 38px;
 	font-weight: bold;
@@ -78,8 +77,6 @@ main {
 }
 
 .main-page {
-	/* width: 1000px; */
-	margin-top: 100px;
 	margin-left: 200px;
 	margin-right: 200px;
 	display: flex;
