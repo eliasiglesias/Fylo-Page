@@ -362,17 +362,83 @@ footer figure [src*="logo"] {
 }
 
 .footer-five img:nth-child(1) {
-	/* border-radius: 8px; */
 	margin-right: 5px;
 	width: 35px;
 	color: white;
 }
 .footer-five img:nth-child(2),
 .footer-five img:nth-child(3) {
-	/* border-radius: 8px; */
 	padding-bottom: 2.75px;
 	margin-right: 5px;
 	width: 30px;
 	height: 30px;
 	color: white;
+}
+
+@media (max-width: 500px) {
+	.quotes {
+		flex-direction: column;
+	}
+
+	.quotes div {
+		margin-bottom: 20px;
+	}
+
+	.email {
+		width: 380px;
+		margin-bottom: -150px;
+	}
+
+	.email p {
+		width: 240px;
+	}
+
+	.email form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.email form input,
+	.email form button {
+		width: 300px;
+		margin: 0px;
+	}
+
+	.email form button {
+		margin-top: 20px;
+	}
+
+	footer figure [src*="logo"] {
+		margin-left: -20px;
+	}
+
+	.foot {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: initial;
+		margin-left: -200px;
+	}
+
+	.footer-two {
+		margin-left: -87px;
+	}
+
+	.footer-three,
+	.footer-four,
+	.footer-five {
+		margin-left: -130px;
+		margin-top: 30px;
+	}
+
+	.footer-five figure {
+		margin-top: 15px;
+		width: 45%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
 }
