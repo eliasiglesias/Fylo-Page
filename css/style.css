@@ -42,6 +42,11 @@ header {
 	padding-bottom: 200px;
 }
 
+header img {
+	width: 100%;
+	height: 100%;
+}
+
 .heading-one {
 	font-family: "Raleway", sans-serif;
 	font-size: 38px;
@@ -358,6 +363,7 @@ footer figure [src*="logo"] {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 	margin-top: -70px;
 }
 
@@ -375,13 +381,27 @@ footer figure [src*="logo"] {
 	color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
+	.works {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	.quotes {
 		flex-direction: column;
 	}
 
 	.quotes div {
 		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 800px) {
+	.heading-one,
+	.content-one {
+		width: 100%;
+		padding-left: 10px;
+		margin-right: 10px;
 	}
 
 	.email {
@@ -410,35 +430,34 @@ footer figure [src*="logo"] {
 		margin-top: 20px;
 	}
 
-	footer figure [src*="logo"] {
-		margin-left: -20px;
+	footer::after,
+	.footer-one,
+	.footer-two {
+		margin-left: -40px;
 	}
 
+	footer,
 	.foot {
+		margin-top: 30px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		align-items: initial;
-		margin-left: -200px;
+		align-items: flex-start;
 	}
 
+	div [class*="footer"] {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-top: 20px;
+	}
+	/* 
+	.footer-one,
 	.footer-two {
-		margin-left: -87px;
-	}
-
-	.footer-three,
-	.footer-four,
-	.footer-five {
-		margin-left: -130px;
-		margin-top: 30px;
-	}
+		margin-left: -35px;
+	} */
 
 	.footer-five figure {
-		margin-top: 15px;
-		width: 45%;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		align-items: center;
+		margin-top: 30px;
 	}
 }
